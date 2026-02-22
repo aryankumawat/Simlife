@@ -21,7 +21,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="relative min-h-screen animated-gradient overflow-hidden bg-matte-black">
+    <main className="relative min-h-screen animated-gradient overflow-hidden bg-matte-black pt-20">
       <ScrollEffects />
       <div className="relative z-10">
         <Hero />

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 
 export default function AboutPage() {
   return (
-    <main className="relative min-h-screen animated-gradient overflow-hidden bg-matte-black">
+    <main className="relative min-h-screen animated-gradient overflow-hidden bg-matte-black pt-20">
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 md:py-32">
         {/* Hero Section */}
         <motion.div
