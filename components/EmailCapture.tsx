@@ -60,7 +60,7 @@ export default function EmailCapture() {
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
               placeholder="Enter your email"
-              className="w-full px-6 py-4 md:py-5 bg-dark-gray/50 backdrop-blur-xl border border-white/10 rounded-xl text-soft-white placeholder-soft-white/40 focus:outline-none focus:border-white/30 transition-all duration-300 text-lg"
+              className="w-full px-6 py-4 md:py-5 bg-white/90 backdrop-blur-xl border border-white/10 rounded-xl text-matte-black placeholder-medium-gray focus:outline-none focus:border-white/30 transition-all duration-300 text-lg"
               required
             />
             <motion.div
