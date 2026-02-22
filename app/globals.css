@@ -34,13 +34,21 @@ main {
 }
 
 /* Ensure text is visible by default */
-h1, h2, h3, h4, h5, h6, p, span, div {
-  color: var(--soft-white);
+h1, h2, h3, h4, h5, h6, p {
+  color: #F5F5FA !important;
+}
+
+section {
+  color: #F5F5FA !important;
 }
 
 /* Override for gradient text */
 .gradient-text {
   color: transparent !important;
+  background: linear-gradient(135deg, #7C6BFF, #9F8CFF) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
 @media (hover: hover) and (pointer: fine) {

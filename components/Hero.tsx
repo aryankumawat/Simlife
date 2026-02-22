@@ -14,104 +14,79 @@ export default function Hero() {
   }, [])
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.1,
+        delayChildren: 0,
       },
     },
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 1, y: 0 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.3,
         ease: [0.6, -0.05, 0.01, 0.99],
       },
     },
   }
 
   const letterVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 1, y: 0 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.05,
-        duration: 0.5,
+        delay: i * 0.02,
+        duration: 0.3,
       },
     }),
   }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden z-30">
-      <motion.div
+      <div
         className="text-center z-50 px-4 relative"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        style={{ position: 'relative', zIndex: 50 }}
+        style={{ position: 'relative', zIndex: 50, color: '#F5F5FA' }}
       >
         {/* Animated Logo */}
-        <motion.div
-          variants={itemVariants}
-          className="mb-8"
-        >
-          <motion.div
-            className="text-6xl md:text-8xl font-bold gradient-text glow-text mb-4"
+        <div className="mb-8">
+          <div
+            className="text-6xl md:text-8xl font-bold mb-4"
             style={{ 
-              color: '#7C6BFF',
+              background: 'linear-gradient(135deg, #7C6BFF, #9F8CFF)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
-            }}
-            animate={{
-              filter: [
-                'brightness(1) drop-shadow(0 0 10px rgba(124, 107, 255, 0.5))',
-                'brightness(1.2) drop-shadow(0 0 20px rgba(124, 107, 255, 0.8))',
-                'brightness(1) drop-shadow(0 0 10px rgba(124, 107, 255, 0.5))',
-              ],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: 'easeInOut',
+              color: '#7C6BFF',
+              display: 'inline-block',
             }}
           >
             SIMLIFE
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
-        {/* Tagline with letter-by-letter reveal */}
-        <motion.h1
-          variants={itemVariants}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-wider text-soft-white"
+        {/* Tagline */}
+        <h1
+          className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-wider"
+          style={{ color: '#F5F5FA' }}
         >
-          {tagline.split('').map((char, i) => (
-            <motion.span
-              key={i}
-              custom={i}
-              variants={letterVariants}
-              className="inline-block"
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </motion.span>
-          ))}
-        </motion.h1>
+          {tagline}
+        </h1>
 
         {/* Subtext */}
-        <motion.p
-          variants={itemVariants}
-          className="text-lg md:text-xl lg:text-2xl text-soft-white/70 font-light tracking-wide"
+        <p
+          className="text-lg md:text-xl lg:text-2xl font-light tracking-wide"
+          style={{ color: 'rgba(245, 245, 250, 0.7)' }}
         >
           {subtext}
-        </motion.p>
-      </motion.div>
+        </p>
+      </div>
 
       {/* Background glow effect */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

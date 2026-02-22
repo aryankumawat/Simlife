@@ -56,45 +56,44 @@ export default function Countdown() {
     }, [value, displayValue])
 
     return (
-      <motion.div
+      <div
         className="flex flex-col items-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        style={{ opacity: 1 }}
       >
         <div className="glass rounded-2xl p-6 md:p-8 min-w-[100px] md:min-w-[140px] border border-deep-lavender/30 glow-lavender">
-          <motion.div
+          <div
             key={displayValue}
-            className="text-4xl md:text-6xl font-bold gradient-text"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.3 }}
+            className="text-4xl md:text-6xl font-bold"
+            style={{
+              background: 'linear-gradient(135deg, #7C6BFF, #9F8CFF)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: '#7C6BFF',
+            }}
           >
             {String(displayValue).padStart(2, '0')}
-          </motion.div>
+          </div>
         </div>
-        <p className="mt-4 text-sm md:text-base text-soft-white/60 uppercase tracking-wider">
+        <p className="mt-4 text-sm md:text-base uppercase tracking-wider" style={{ color: 'rgba(245, 245, 250, 0.6)' }}>
           {label}
         </p>
-      </motion.div>
+      </div>
     )
   }
 
   return (
     <section className="relative py-20 md:py-32 px-4">
       <div className="max-w-6xl mx-auto">
-        <motion.div
+        <div
           className="flex flex-wrap justify-center gap-4 md:gap-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          style={{ opacity: 1 }}
         >
           <TimeUnit value={timeLeft.days} label="Days" />
           <TimeUnit value={timeLeft.hours} label="Hours" />
           <TimeUnit value={timeLeft.minutes} label="Minutes" />
           <TimeUnit value={timeLeft.seconds} label="Seconds" />
-        </motion.div>
+        </div>
       </div>
     </section>
   )
