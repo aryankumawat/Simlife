@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Footer from '@/components/Footer'
 
 export default function AboutPage() {
   return (
@@ -179,6 +180,7 @@ export default function AboutPage() {
           </p>
         </motion.div>
       </div>
+      <Footer />
     </main>
   )
 }

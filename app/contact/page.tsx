@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Footer from '@/components/Footer'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -244,6 +245,7 @@ export default function ContactPage() {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </main>
   )
 }
