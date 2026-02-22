@@ -60,16 +60,16 @@ export default function Countdown() {
         className="flex flex-col items-center"
         style={{ opacity: 1 }}
       >
-        <div className="glass rounded-2xl p-6 md:p-8 min-w-[100px] md:min-w-[140px] border border-deep-lavender/30 glow-lavender">
+        <div className="glass rounded-2xl p-6 md:p-8 min-w-[100px] md:min-w-[140px] border border-white/10 glow-lavender">
           <div
             key={displayValue}
             className="text-4xl md:text-6xl font-bold"
             style={{
-              background: 'linear-gradient(135deg, #7C6BFF, #9F8CFF)',
+              background: 'linear-gradient(135deg, #FFFFFF, #CCCCCC)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
-              color: '#7C6BFF',
+              color: '#FFFFFF',
             }}
           >
             {String(displayValue).padStart(2, '0')}

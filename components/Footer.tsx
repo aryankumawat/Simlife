@@ -11,11 +11,11 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative py-16 md:py-20 px-4 border-t border-deep-lavender/20">
+    <footer className="relative py-16 md:py-20 px-4 border-t border-white/10">
       <div className="max-w-6xl mx-auto">
         {/* Animated divider */}
         <motion.div
-          className="h-px bg-gradient-to-r from-transparent via-deep-lavender to-transparent mb-12"
+          className="h-px bg-gradient-to-r from-transparent via-white to-transparent mb-12"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
@@ -63,7 +63,7 @@ export default function Footer() {
             <p className="text-soft-white/60 text-sm mb-1">Contact</p>
             <a
               href="mailto:hello@simlife.com"
-              className="text-electric-lavender hover:text-deep-lavender transition-colors duration-300"
+              className="text-white hover:text-light-gray transition-colors duration-300"
             >
               hello@simlife.com
             </a>
@@ -91,7 +91,7 @@ function SocialIcon({ social, index }: { social: typeof socialLinks[0]; index: n
   return (
     <motion.a
       href={social.href}
-      className="w-12 h-12 rounded-full glass border border-deep-lavender/30 flex items-center justify-center text-xl hover:border-electric-lavender transition-all duration-300"
+      className="w-12 h-12 rounded-full glass border border-white/10 flex items-center justify-center text-xl hover:border-white/30 transition-all duration-300"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       whileHover={{ scale: 1.1 }}
@@ -109,7 +109,7 @@ function SocialIcon({ social, index }: { social: typeof socialLinks[0]; index: n
       </motion.span>
       {isHovered && (
         <motion.div
-          className="absolute inset-0 rounded-full bg-electric-lavender/20 blur-xl"
+          className="absolute inset-0 rounded-full bg-white/10 blur-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

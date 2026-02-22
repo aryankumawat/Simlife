@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'deep-lavender': '#7C6BFF',
-        'electric-lavender': '#9F8CFF',
-        'midnight-purple': '#1C1B2E',
-        'matte-black': '#0F0F14',
-        'soft-white': '#F5F5FA',
+        'pure-black': '#000000',
+        'matte-black': '#0A0A0A',
+        'dark-gray': '#1A1A1A',
+        'medium-gray': '#404040',
+        'light-gray': '#808080',
+        'soft-white': '#F5F5F5',
+        'pure-white': '#FFFFFF',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

@@ -33,7 +33,7 @@ export default function ParticleBackground() {
         radius: Math.random() * 2 + 1,
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
-        opacity: Math.random() * 0.5 + 0.2,
+        opacity: Math.random() * 0.3 + 0.1,
       })
     }
 
@@ -49,7 +49,7 @@ export default function ParticleBackground() {
 
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(124, 107, 255, ${particle.opacity})`
+        ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity * 0.4})`
         ctx.fill()
       })
 

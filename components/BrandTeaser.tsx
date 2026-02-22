@@ -50,19 +50,19 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
   return (
     <motion.div
       ref={ref}
-      className="glass rounded-2xl p-8 border border-deep-lavender/30 hover:border-electric-lavender/50 transition-all duration-300 group cursor-pointer"
+      className="glass rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
       whileHover={{ 
-        scale: 1.05,
-        rotateY: 5,
-        rotateX: 5,
+        scale: 1.02,
+        rotateY: 2,
+        rotateX: 2,
       }}
       style={{ transformStyle: 'preserve-3d' }}
     >
       <motion.div
-        className="w-12 h-12 rounded-full bg-gradient-to-br from-deep-lavender to-electric-lavender mb-6 flex items-center justify-center"
+        className="w-12 h-12 rounded-full bg-gradient-to-br from-white to-light-gray mb-6 flex items-center justify-center"
         whileHover={{ scale: 1.1, rotate: 180 }}
         transition={{ duration: 0.3 }}
       >
@@ -78,7 +78,7 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
       </p>
 
       <motion.div
-        className="mt-6 h-1 bg-gradient-to-r from-deep-lavender to-electric-lavender rounded-full"
+        className="mt-6 h-1 bg-gradient-to-r from-white to-light-gray rounded-full"
         initial={{ width: 0 }}
         animate={isInView ? { width: '100%' } : { width: 0 }}
         transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}

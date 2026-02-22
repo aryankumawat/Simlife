@@ -59,11 +59,11 @@ export default function Hero() {
           <div
             className="text-6xl md:text-8xl font-bold mb-4"
             style={{ 
-              background: 'linear-gradient(135deg, #7C6BFF, #9F8CFF)',
+              background: 'linear-gradient(135deg, #FFFFFF, #CCCCCC)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
-              color: '#7C6BFF',
+              color: '#FFFFFF',
               display: 'inline-block',
             }}
           >
@@ -91,13 +91,13 @@ export default function Hero() {
       {/* Background glow effect */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
-          className="w-96 h-96 rounded-full bg-deep-lavender/10 blur-3xl"
+          className="w-96 h-96 rounded-full bg-white/5 blur-3xl"
           animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
+            scale: [1, 1.1, 1],
+            opacity: [0.1, 0.2, 0.1],
           }}
           transition={{
-            duration: 4,
+            duration: 6,
             repeat: Infinity,
             ease: 'easeInOut',
           }}

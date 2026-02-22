@@ -47,14 +47,14 @@ export default function CustomCursor() {
   return (
     <>
       <div
-        className="fixed top-0 left-0 w-6 h-6 rounded-full border-2 border-deep-lavender pointer-events-none z-50 transition-all duration-300 ease-out mix-blend-difference"
+        className="fixed top-0 left-0 w-6 h-6 rounded-full border-2 border-white pointer-events-none z-50 transition-all duration-300 ease-out mix-blend-difference"
         style={{
           transform: `translate(${position.x - 12}px, ${position.y - 12}px)`,
           scale: isHovering ? 1.5 : 1,
         }}
       />
       <div
-        className="fixed top-0 left-0 w-2 h-2 rounded-full bg-electric-lavender pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-difference glow-lavender"
+        className="fixed top-0 left-0 w-2 h-2 rounded-full bg-white pointer-events-none z-50 transition-all duration-200 ease-out mix-blend-difference glow-lavender"
         style={{
           transform: `translate(${position.x - 4}px, ${position.y - 4}px)`,
         }}

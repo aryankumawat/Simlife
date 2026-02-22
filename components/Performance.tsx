@@ -58,16 +58,16 @@ function HighlightCard({ highlight, index }: { highlight: typeof highlights[0]; 
   return (
     <motion.div
       ref={ref}
-      className="glass rounded-xl p-6 md:p-8 border border-deep-lavender/30 text-center group hover:border-electric-lavender/50 transition-all duration-300"
+      className="glass rounded-xl p-6 md:p-8 border border-white/10 text-center group hover:border-white/20 transition-all duration-300"
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      whileHover={{ y: -10 }}
+      whileHover={{ y: -5 }}
     >
       <motion.div
         className="text-4xl md:text-5xl mb-4"
-        animate={isInView ? { scale: [1, 1.2, 1] } : { scale: 1 }}
-        transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+        animate={isInView ? { scale: [1, 1.1, 1] } : { scale: 1 }}
+        transition={{ duration: 0.8, delay: index * 0.1 + 0.3 }}
       >
         {highlight.icon}
       </motion.div>

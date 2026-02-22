@@ -60,15 +60,15 @@ export default function EmailCapture() {
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
               placeholder="Enter your email"
-              className="w-full px-6 py-4 md:py-5 bg-midnight-purple/50 backdrop-blur-xl border border-deep-lavender/30 rounded-xl text-soft-white placeholder-soft-white/40 focus:outline-none focus:border-electric-lavender transition-all duration-300 text-lg"
+              className="w-full px-6 py-4 md:py-5 bg-dark-gray/50 backdrop-blur-xl border border-white/10 rounded-xl text-soft-white placeholder-soft-white/40 focus:outline-none focus:border-white/30 transition-all duration-300 text-lg"
               required
             />
             <motion.div
               className="absolute inset-0 rounded-xl pointer-events-none"
               animate={{
                 boxShadow: isFocused
-                  ? '0 0 20px rgba(124, 107, 255, 0.5), 0 0 40px rgba(124, 107, 255, 0.3)'
-                  : '0 0 0px rgba(124, 107, 255, 0)',
+                  ? '0 0 15px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1)'
+                  : '0 0 0px rgba(255, 255, 255, 0)',
               }}
               transition={{ duration: 0.3 }}
             />
@@ -76,13 +76,13 @@ export default function EmailCapture() {
 
           <motion.button
             type="submit"
-            className="mt-6 w-full md:w-auto px-12 py-4 md:py-5 bg-gradient-to-r from-deep-lavender to-electric-lavender rounded-xl font-semibold text-lg uppercase tracking-wider text-soft-white relative overflow-hidden group"
+            className="mt-6 w-full md:w-auto px-12 py-4 md:py-5 bg-gradient-to-r from-white to-light-gray rounded-xl font-semibold text-lg uppercase tracking-wider text-matte-black relative overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <span className="relative z-10">Unlock Early Access</span>
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-electric-lavender to-deep-lavender opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute inset-0 bg-gradient-to-r from-light-gray to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             />
           </motion.button>
         </motion.form>
@@ -93,9 +93,9 @@ export default function EmailCapture() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="mt-6 p-4 glass rounded-xl border border-electric-lavender/50"
+              className="mt-6 p-4 glass rounded-xl border border-white/20"
             >
-              <p className="text-electric-lavender font-semibold">
+              <p className="text-white font-semibold">
                 ✓ You're in! Check your email for confirmation.
               </p>
             </motion.div>

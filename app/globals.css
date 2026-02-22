@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --deep-lavender: #7C6BFF;
-  --electric-lavender: #9F8CFF;
-  --midnight-purple: #1C1B2E;
-  --matte-black: #0F0F14;
-  --soft-white: #F5F5FA;
+  --pure-black: #000000;
+  --matte-black: #0A0A0A;
+  --dark-gray: #1A1A1A;
+  --medium-gray: #404040;
+  --light-gray: #808080;
+  --soft-white: #F5F5F5;
+  --pure-white: #FFFFFF;
 }
 
 * {
@@ -45,7 +47,7 @@ section {
 /* Override for gradient text */
 .gradient-text {
   color: transparent !important;
-  background: linear-gradient(135deg, #7C6BFF, #9F8CFF) !important;
+  background: linear-gradient(135deg, #FFFFFF, #CCCCCC) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -67,42 +69,42 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--deep-lavender);
+  background: var(--medium-gray);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--electric-lavender);
+  background: var(--light-gray);
 }
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(28, 27, 46, 0.3);
+  background: rgba(26, 26, 26, 0.4);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(124, 107, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Glow effects */
 .glow-lavender {
-  box-shadow: 0 0 20px rgba(124, 107, 255, 0.5),
-              0 0 40px rgba(124, 107, 255, 0.3),
-              0 0 60px rgba(124, 107, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2),
+              0 0 30px rgba(255, 255, 255, 0.1),
+              0 0 45px rgba(255, 255, 255, 0.05);
 }
 
 .glow-text {
-  text-shadow: 0 0 10px rgba(124, 107, 255, 0.5),
-               0 0 20px rgba(124, 107, 255, 0.3),
-               0 0 30px rgba(124, 107, 255, 0.1);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+               0 0 16px rgba(255, 255, 255, 0.2),
+               0 0 24px rgba(255, 255, 255, 0.1);
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #7C6BFF, #9F8CFF);
+  background: linear-gradient(135deg, #FFFFFF, #CCCCCC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: #7C6BFF; /* Fallback for browsers that don't support background-clip */
+  color: #FFFFFF; /* Fallback for browsers that don't support background-clip */
   display: inline-block;
 }
 
@@ -111,13 +113,13 @@ section {
   background: linear-gradient(
     -45deg,
     var(--matte-black),
-    var(--midnight-purple),
-    #2a1f3d,
-    var(--midnight-purple),
+    var(--dark-gray),
+    #0F0F0F,
+    var(--dark-gray),
     var(--matte-black)
   );
   background-size: 400% 400%;
-  animation: gradient-shift 15s ease infinite;
+  animation: gradient-shift 20s ease infinite;
 }
 
 @keyframes gradient-shift {
@@ -185,12 +187,12 @@ section {
 .light-streak {
   position: absolute;
   width: 200px;
-  height: 2px;
+  height: 1px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(124, 107, 255, 0.5),
+    rgba(255, 255, 255, 0.3),
     transparent
   );
-  animation: light-streak 8s infinite;
+  animation: light-streak 12s infinite;
 }
