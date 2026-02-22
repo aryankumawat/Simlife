@@ -7,8 +7,6 @@ import EmailCapture from '@/components/EmailCapture'
 import BrandTeaser from '@/components/BrandTeaser'
 import Performance from '@/components/Performance'
 import Footer from '@/components/Footer'
-import FloatingCapsules from '@/components/FloatingCapsules'
-import LightStreaks from '@/components/LightStreaks'
 import ScrollEffects from '@/components/ScrollEffects'
 
 export default function Home() {
@@ -25,8 +23,6 @@ export default function Home() {
   return (
     <main className="relative min-h-screen animated-gradient overflow-hidden bg-matte-black">
       <ScrollEffects />
-      <LightStreaks />
-      <FloatingCapsules />
       <div className="relative z-10">
         <Hero />
         <Countdown />
