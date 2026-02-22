@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Simlife - Redefining Performance',
+  title: 'Simlife - Redefined Health Formulations',
   description: 'The Future of Strength Begins Here',
 }
 

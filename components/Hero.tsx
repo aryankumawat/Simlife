@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const tagline = "Redefining Performance."
+const tagline = "Redefined Health Formulations."
 const subtext = "The Future of Strength Begins Here."
 
 export default function Hero() {
