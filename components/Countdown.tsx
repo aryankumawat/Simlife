@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-// Set launch date (adjust as needed)
-const LAUNCH_DATE = new Date('2024-12-31T23:59:59').getTime()
+// Set launch date (30 days from now)
+const LAUNCH_DATE = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).getTime()
 
 interface TimeLeft {
   days: number
