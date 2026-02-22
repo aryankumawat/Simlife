@@ -70,15 +70,45 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Copyright */}
+        {/* Navigation Links */}
         <motion.div
-          className="mt-12 text-center text-soft-white/40 text-sm"
+          className="mt-12 pt-8 border-t border-white/10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <p>© {new Date().getFullYear()} Simlife. All rights reserved.</p>
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <a
+              href="/about"
+              className="text-soft-white/70 hover:text-white transition-colors duration-300"
+            >
+              About Us
+            </a>
+            <a
+              href="/returns"
+              className="text-soft-white/70 hover:text-white transition-colors duration-300"
+            >
+              Return Policy
+            </a>
+            <a
+              href="/contact"
+              className="text-soft-white/70 hover:text-white transition-colors duration-300"
+            >
+              Contact Us
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Copyright */}
+        <motion.div
+          className="text-center text-soft-white/40 text-sm"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <p>© {new Date().getFullYear()} SmiLife Bio Therapy. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
