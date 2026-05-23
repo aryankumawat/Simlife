@@ -289,11 +289,21 @@ body {
   animation: shimmer 4s linear infinite;
 }
 
-/* Marquee strip */
+/* Marquee strip — explicit keyframes so the animation doesn't depend on Tailwind config */
+@keyframes marquee-scroll {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 40s linear infinite;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
 /* Subtle product-card hover lift */

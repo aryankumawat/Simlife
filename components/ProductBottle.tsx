@@ -129,29 +129,30 @@ export default function ProductBottle({
           strokeWidth="0.6"
         />
 
-        {/* Wordmark "viVien" — sized to fit the 96px-wide label */}
+        {/* Wordmark "VIVIEN" — display caps with heavier centre V, matching the new brand logo */}
         <text
           x="160"
-          y="200"
+          y="204"
           textAnchor="middle"
           fill="#FBF7EE"
           fontFamily="Georgia, 'Times New Roman', serif"
           fontSize="22"
-          fontStyle="italic"
-          opacity="0.97"
+          letterSpacing="2.2"
+          fontWeight="300"
+          opacity="0.98"
         >
-          vi<tspan fontWeight="700" fontStyle="normal">V</tspan>ien
+          VI<tspan fontWeight="700">V</tspan>IEN
         </text>
 
         {/* BIOTHERAPY mini-tagline */}
         <text
           x="160"
-          y="218"
+          y="222"
           textAnchor="middle"
           fill={accent}
           fontFamily="-apple-system, system-ui, sans-serif"
-          fontSize="6"
-          letterSpacing="2"
+          fontSize="5.5"
+          letterSpacing="2.4"
           opacity="0.95"
         >
           BIOTHERAPY
