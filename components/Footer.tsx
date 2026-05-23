@@ -148,14 +148,21 @@ export default function Footer() {
             </ul>
 
             <div className="mt-7 flex items-center gap-4">
-              {['IG', 'TT', 'YT', 'X'].map((s) => (
+              {[
+                { label: 'IG', href: 'https://www.instagram.com/vivienbiotherapy/', name: 'Instagram' },
+                { label: 'TT', href: '#', name: 'TikTok' },
+                { label: 'YT', href: '#', name: 'YouTube' },
+                { label: 'X',  href: '#', name: 'X (Twitter)' },
+              ].map((s) => (
                 <a
-                  key={s}
-                  href="#"
-                  aria-label={s}
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
                   className="w-10 h-10 rounded-full border border-cream/25 flex items-center justify-center text-[10px] uppercase tracking-[0.2em] text-cream/75 hover:bg-cream hover:text-plum-deep transition-all duration-300"
                 >
-                  {s}
+                  {s.label}
                 </a>
               ))}
             </div>

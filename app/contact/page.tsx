@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="cinematic-cream pb-12 md:pb-16">
+      <section className="cinematic-cream pb-24 md:pb-36">
         <div className="max-w-7xl mx-auto px-5 md:px-10 pt-12 md:pt-20">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -50,7 +50,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form + info */}
-      <section className="bg-ivory pb-24 md:pb-32">
+      <section className="bg-ivory pt-20 md:pt-24 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           {/* Form */}
           <motion.div
@@ -177,9 +177,20 @@ export default function ContactPage() {
             <div className="border-t border-plum/15 pt-6">
               <div className="eyebrow text-plum-soft mb-4">Social</div>
               <div className="space-y-2 text-ink/75 font-light">
-                <a className="block link-underline" href="#">Instagram · @vivienbiotherapy</a>
-                <a className="block link-underline" href="#">TikTok · @vivienbiotherapy</a>
-                <a className="block link-underline" href="#">YouTube · Vivien BioTherapy</a>
+                <a
+                  className="block link-underline"
+                  href="https://www.instagram.com/vivienbiotherapy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram · @vivienbiotherapy
+                </a>
+                <a className="block link-underline" href="#" target="_blank" rel="noopener noreferrer">
+                  TikTok · @vivienbiotherapy
+                </a>
+                <a className="block link-underline" href="#" target="_blank" rel="noopener noreferrer">
+                  YouTube · Vivien BioTherapy
+                </a>
               </div>
             </div>
           </motion.aside>
