@@ -1,19 +1,44 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
-import CustomCursor from '@/components/CustomCursor'
-import ParticleBackground from '@/components/ParticleBackground'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/next'
 
-const inter = Inter({ 
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-cormorant',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Simlife - Redefined Health Formulations',
-  description: 'The Future of Strength Begins Here',
+  title: 'Vivien Biotherapy — Engineered Vitality. Cellular Performance.',
+  description:
+    'Vivien Biotherapy is a next-generation biotherapy company building clinically formulated supplements for cellular optimization, recovery, cognitive clarity, and long-term vitality.',
+  keywords: [
+    'vivien biotherapy',
+    'longevity supplements',
+    'cellular optimization',
+    'NAD+',
+    'recovery',
+    'nootropic',
+    'biohacking',
+    'human performance',
+  ],
+  openGraph: {
+    title: 'Vivien Biotherapy',
+    description: 'Engineered vitality. Cellular performance. A new standard in biotherapy.',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -22,12 +47,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <CustomCursor />
-        <ParticleBackground />
+    <html lang="en" className={`scroll-smooth ${poppins.variable} ${cormorant.variable}`}>
+      <body className="font-sans antialiased bg-ivory text-ink">
         <Header />
-        {children}
+        <main className="relative">{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>
