@@ -21,9 +21,9 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Vivien Biotherapy — Engineered Vitality. Cellular Performance.',
+  title: 'Vivien BioTherapy — Engineered Vitality. Cellular Performance.',
   description:
-    'Vivien Biotherapy is a next-generation biotherapy company building clinically formulated supplements for cellular optimization, recovery, cognitive clarity, and long-term vitality.',
+    'Vivien BioTherapy is a next-generation BioTherapy company building clinically formulated supplements for cellular optimization, recovery, cognitive clarity, and long-term vitality.',
   keywords: [
     'vivien biotherapy',
     'longevity supplements',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     'human performance',
   ],
   openGraph: {
-    title: 'Vivien Biotherapy',
-    description: 'Engineered vitality. Cellular performance. A new standard in biotherapy.',
+    title: 'Vivien BioTherapy',
+    description: 'Engineered vitality. Cellular performance. A new standard in BioTherapy.',
     type: 'website',
   },
 }

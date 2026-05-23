@@ -179,7 +179,7 @@ export default function ContactPage() {
               <div className="space-y-2 text-ink/75 font-light">
                 <a className="block link-underline" href="#">Instagram · @vivienbiotherapy</a>
                 <a className="block link-underline" href="#">TikTok · @vivienbiotherapy</a>
-                <a className="block link-underline" href="#">YouTube · Vivien Biotherapy</a>
+                <a className="block link-underline" href="#">YouTube · Vivien BioTherapy</a>
               </div>
             </div>
           </motion.aside>

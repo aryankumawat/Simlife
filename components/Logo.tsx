@@ -23,7 +23,7 @@ const colorMap = {
 }
 
 /**
- * Vivien Biotherapy wordmark.
+ * Vivien BioTherapy wordmark.
  * Two slanted serif "V"s sandwich the lowercase "i" and bookend the word.
  * Rendered with the Cormorant Garamond display font for the look in the brand book.
  */
@@ -50,7 +50,7 @@ export default function Logo({
       </div>
       {withTagline && (
         <div className={`${sz.tagline} ${cls} font-sans font-medium uppercase mt-1`}>
-          Biotherapy
+          BioTherapy
         </div>
       )}
     </div>
@@ -58,7 +58,7 @@ export default function Logo({
 
   if (!href) return inner
   return (
-    <Link href={href} aria-label="Vivien Biotherapy — Home" className="inline-block">
+    <Link href={href} aria-label="Vivien BioTherapy — Home" className="inline-block">
       {inner}
     </Link>
   )

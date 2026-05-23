@@ -55,7 +55,7 @@ export default function ProductCard({ product, index = 0 }: { product: Product; 
           </div>
           <div className="text-right shrink-0">
             <div className="text-plum-deep text-base font-light">
-              ${product.pricePlanned}
+              ₹{product.pricePlanned.toLocaleString('en-IN')}
             </div>
             <div className="text-ink/50 text-[10px] uppercase tracking-[0.25em] mt-1">
               From

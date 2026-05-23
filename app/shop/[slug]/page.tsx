@@ -84,7 +84,7 @@ export default function ProductPage() {
               <div className="flex items-baseline justify-between mb-2">
                 <span className="text-ink/60 text-[11px] uppercase tracking-[0.3em] font-medium">From</span>
                 <div className="flex items-baseline gap-2">
-                  <span className="font-display text-3xl text-plum-deep">${product.pricePlanned}</span>
+                  <span className="font-display text-3xl text-plum-deep">₹{product.pricePlanned.toLocaleString('en-IN')}</span>
                   <span className="text-ink/50 text-sm">/ {product.servings.split(' · ')[0]}</span>
                 </div>
               </div>

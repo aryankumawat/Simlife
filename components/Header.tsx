@@ -30,22 +30,25 @@ export default function Header() {
 
   return (
     <>
-      {/* Top announcement bar */}
-      <div className="hidden md:block bg-plum-deep text-cream/85 text-[11px] tracking-[0.3em] uppercase font-medium py-2 text-center relative z-50">
-        <span className="opacity-80">Now in clinical formulation</span>
-        <span className="mx-3 opacity-40">·</span>
-        <span>Founding access opens soon</span>
-        <span className="mx-3 opacity-40">·</span>
-        <span className="opacity-80">Join the waitlist</span>
-      </div>
+      {/* Combined fixed top stack: announcement bar + nav */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        {/* Announcement bar */}
+        <div className="hidden md:block bg-plum-deep text-cream/85 text-[11px] tracking-[0.3em] uppercase font-medium py-2 text-center">
+          <span className="opacity-80">Now in clinical formulation</span>
+          <span className="mx-3 opacity-40">·</span>
+          <span>Founding access opens soon</span>
+          <span className="mx-3 opacity-40">·</span>
+          <span className="opacity-80">Join the waitlist</span>
+        </div>
 
-      <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-          scrolled
-            ? 'bg-ivory/85 backdrop-blur-xl border-b border-plum/10 py-3'
-            : 'bg-transparent py-5'
-        } ${pathname !== '/' && !scrolled ? 'bg-ivory/70 backdrop-blur-xl' : ''}`}
-      >
+        {/* Header nav — always has a backdrop so text is readable on dark heroes */}
+        <header
+          className={`transition-all duration-500 ${
+            scrolled
+              ? 'bg-ivory/90 backdrop-blur-xl border-b border-plum/10 py-3'
+              : 'bg-ivory/75 backdrop-blur-xl py-4 md:py-5'
+          }`}
+        >
         <div className="max-w-7xl mx-auto px-5 md:px-10 flex items-center justify-between">
           {/* Left */}
           <div className="flex-1 flex items-center">
@@ -130,10 +133,11 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </header>
+        </header>
+      </div>
 
-      {/* Spacer */}
-      <div className="h-[72px] md:h-[100px]" aria-hidden="true" />
+      {/* Spacer — sized to clear the combined announcement bar + header */}
+      <div className="h-[72px] md:h-[112px]" aria-hidden="true" />
 
       {/* Mobile drawer */}
       <AnimatePresence>

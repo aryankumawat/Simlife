@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Vivien Biotherapy palette — derived from the brand book
+        // Vivien BioTherapy palette — derived from the brand book
         'plum-deep': '#2A0F2E',     // deepest aubergine — almost black
         'plum': '#4A1F44',          // primary brand plum
         'plum-rich': '#5A2A55',     // hover / accent plum

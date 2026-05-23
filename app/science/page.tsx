@@ -59,7 +59,7 @@ export default function SciencePage() {
               Biology is the <em className="font-display italic shimmer">first principle.</em>
             </h1>
             <p className="text-cream/75 text-lg md:text-2xl font-light leading-relaxed max-w-3xl">
-              Vivien Biotherapy is built around a thesis: the supplement industry is crowded with products that
+              Vivien BioTherapy is built around a thesis: the supplement industry is crowded with products that
               don&apos;t work for reasons that are well understood and almost entirely avoidable. Here is the
               formulation logic, and the standards, we hold ourselves to.
             </p>
@@ -86,7 +86,7 @@ export default function SciencePage() {
               standards are uneven. And most companies are formulating for a marketing aesthetic, not a biological aim.
             </p>
             <p>
-              Vivien Biotherapy was built to do the opposite. Every protocol begins with a defined biological
+              Vivien BioTherapy was built to do the opposite. Every protocol begins with a defined biological
               question — what is the system we&apos;re trying to support, and what does the peer-reviewed
               literature actually say about how to support it? — and the formulation follows from that question,
               not from a category brief.

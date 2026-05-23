@@ -61,7 +61,7 @@ export default function AboutPage() {
               Cellular performance.
             </h1>
             <p className="text-cream/75 text-lg md:text-2xl font-light leading-relaxed max-w-3xl">
-              Vivien Biotherapy is a next-generation biotherapy company building clinically formulated
+              Vivien BioTherapy is a next-generation BioTherapy company building clinically formulated
               supplements for the systems that actually determine how you feel, perform, and age.
             </p>
           </motion.div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
               mental clarity, and long-term vitality.&rdquo;
             </p>
             <p>
-              Vivien Biotherapy was founded on a thesis that&apos;s become almost obvious if you look at the
+              Vivien BioTherapy was founded on a thesis that&apos;s become almost obvious if you look at the
               supplement category closely: the products that work in clinical research mostly don&apos;t make it
               into the bottle. Doses are too low. Forms are wrong. Active ingredients are diluted into
               proprietary blends to hide weak chemistry. Most companies are formulating for a category brief, not
@@ -167,9 +167,9 @@ export default function AboutPage() {
               ))}
             </ul>
             <p className="text-cream/75 text-lg md:text-xl leading-relaxed font-light pt-4">
-              Vivien Biotherapy was created to change that standard — through clinical formulation logic,
+              Vivien BioTherapy was created to change that standard — through clinical formulation logic,
               premium manufacturing, customer education, and a sustainable, long-term view of what a real
-              biotherapy company should be.
+              BioTherapy company should be.
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function AboutPage() {
             Performance starts at the <em className="font-display italic shimmer">biological level.</em>
           </h2>
           <p className="text-cream/70 text-lg font-light leading-relaxed mb-10">
-            Welcome to Vivien Biotherapy.
+            Welcome to Vivien BioTherapy.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/shop" className="btn-cream">Explore the Collection</Link>

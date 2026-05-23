@@ -58,7 +58,7 @@ export default function Footer() {
           >
             <Logo color="cream" size="lg" href={null} />
             <p className="mt-8 text-cream/65 font-light leading-relaxed max-w-md text-lg">
-              Engineered vitality. Cellular performance. A next-generation biotherapy company building
+              Engineered vitality. Cellular performance. A next-generation BioTherapy company building
               clinically formulated supplements for serious people.
             </p>
           </motion.div>
@@ -168,13 +168,13 @@ export default function Footer() {
             <div className="font-display italic text-5xl md:text-9xl leading-none tracking-tight whitespace-nowrap">
               vi<span className="not-italic font-semibold">V</span>ien
             </div>
-            <div className="text-cream/40 text-[11px] tracking-[0.4em] uppercase">Biotherapy</div>
+            <div className="text-cream/40 text-[11px] tracking-[0.4em] uppercase">BioTherapy</div>
           </div>
         </div>
 
         {/* Bottom fine print */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-cream/40 text-xs">
-          <p>© {new Date().getFullYear()} Vivien Biotherapy. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Vivien BioTherapy. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <Link href="/returns" className="link-underline hover:text-cream/70">Returns</Link>
             <Link href="/contact" className="link-underline hover:text-cream/70">Privacy</Link>

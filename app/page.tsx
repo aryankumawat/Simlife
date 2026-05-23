@@ -113,7 +113,7 @@ export default function Home() {
               transition={{ duration: 1.2, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               className="mt-10 max-w-2xl text-cream/75 text-lg md:text-xl font-light leading-relaxed"
             >
-              Vivien Biotherapy is a next-generation biotherapy company building clinically formulated
+              Vivien BioTherapy is a next-generation BioTherapy company building clinically formulated
               supplements for cellular optimization, recovery, cognitive clarity, and long-term vitality —
               for people who take their biology seriously.
             </motion.p>
@@ -368,7 +368,7 @@ export default function Home() {
             <div className="space-y-5 text-ink/70 text-lg leading-relaxed font-light">
               <p>
                 Most products under-dose, over-promise, and prioritise marketing over the formulation itself.
-                Vivien Biotherapy was built to change that standard — clinical formulation logic, premium
+                Vivien BioTherapy was built to change that standard — clinical formulation logic, premium
                 manufacturing, full transparency, and a long-term view.
               </p>
               <p>

@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'NAD⁺ precursor protocol',
     category: 'Cellular',
     status: 'coming-soon',
-    pricePlanned: 84,
+    pricePlanned: 7499,
     shortDescription:
       'A precision NAD⁺ precursor protocol designed to support mitochondrial energy, DNA repair signalling, and cellular age resilience.',
     longDescription:
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'Daytime nootropic matrix',
     category: 'Cognitive',
     status: 'coming-soon',
-    pricePlanned: 68,
+    pricePlanned: 5999,
     shortDescription:
       'A clean, stimulant-modulated nootropic stack engineered for sustained focus, working memory, and the cognitive endurance long days require.',
     longDescription:
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'Evening recovery + sleep architecture',
     category: 'Recovery',
     status: 'coming-soon',
-    pricePlanned: 72,
+    pricePlanned: 6499,
     shortDescription:
       'A nightly recovery protocol designed to deepen restorative sleep, regulate cortisol, and accelerate muscular and neural repair.',
     longDescription:
@@ -162,7 +162,7 @@ export const PRODUCTS: Product[] = [
     tagline: 'Daily micronutrient infrastructure',
     category: 'Foundations',
     status: 'coming-soon',
-    pricePlanned: 58,
+    pricePlanned: 4799,
     shortDescription:
       'The micronutrient floor every other protocol stands on — methylated B-complex, D3/K2, omega-3s, and the trace minerals modern diets quietly miss.',
     longDescription:
