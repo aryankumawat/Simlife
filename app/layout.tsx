@@ -4,6 +4,7 @@ import './globals.css'
 import CustomCursor from '@/components/CustomCursor'
 import ParticleBackground from '@/components/ParticleBackground'
 import Header from '@/components/Header'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ParticleBackground />
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   )
