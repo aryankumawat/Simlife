@@ -9,6 +9,8 @@ type ProductBottleProps = {
   bgTo: string
   accent: string
   size?: 'sm' | 'md' | 'lg'
+  /** Show the small tagline strip at the bottom of the visual. Default true. */
+  showTagline?: boolean
 }
 
 /**
@@ -22,6 +24,7 @@ export default function ProductBottle({
   bgFrom,
   bgTo,
   accent,
+  showTagline = true,
 }: ProductBottleProps) {
   // Unique id slug for SVG defs so multiple bottles on the page don't collide
   const id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-')
@@ -197,10 +200,12 @@ export default function ProductBottle({
         <circle cx="160" cy="310" r="1.4" fill={accent} opacity="0.9" />
       </motion.svg>
 
-      {/* Tagline below the bottle */}
-      <div className="absolute bottom-5 left-5 right-5 text-cream/70 text-[10px] tracking-[0.3em] uppercase font-medium z-10 text-center">
-        {tagline}
-      </div>
+      {/* Tagline below the bottle (suppressed on cards where the meta sits underneath) */}
+      {showTagline && (
+        <div className="absolute bottom-5 left-5 right-5 text-cream/70 text-[10px] tracking-[0.3em] uppercase font-medium z-10 text-center">
+          {tagline}
+        </div>
+      )}
     </div>
   )
 }

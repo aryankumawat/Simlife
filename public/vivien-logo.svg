@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" fill="none">
+  <!--
+    Vivien BioTherapy wordmark.
+    Inspired by the brand guide PDF: tall, elegant display-serif "VIVIEN"
+    with the centre V slightly bolder, and a spaced "BIOTHERAPY" tagline.
+    Replace this file with the official brand asset when ready —
+    /public/vivien-logo.svg is the only path the site references.
+  -->
+  <defs>
+    <style type="text/css">
+      .wordmark {
+        font-family: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 0.06em;
+      }
+      .wordmark-bold {
+        font-family: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+        font-weight: 600;
+      }
+      .tagline {
+        font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.6em;
+      }
+    </style>
+  </defs>
+
+  <!-- VIVIEN wordmark — centre V is heavier to echo the brand's stylised V -->
+  <text x="300" y="138" text-anchor="middle" class="wordmark" font-size="158" fill="currentColor">
+    VI<tspan class="wordmark-bold">V</tspan>IEN
+  </text>
+
+  <!-- Spaced BIOTHERAPY tagline -->
+  <text x="300" y="190" text-anchor="middle" class="tagline" font-size="18" fill="currentColor">
+    BIOTHERAPY
+  </text>
+</svg>

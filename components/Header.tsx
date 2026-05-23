@@ -81,7 +81,7 @@ export default function Header() {
 
           {/* Center logo */}
           <div className="flex-shrink-0">
-            <Logo color="plum" size="sm" withTagline={false} />
+            <Logo color="plum" size="sm" compact />
           </div>
 
           {/* Right */}
@@ -151,7 +151,7 @@ export default function Header() {
             className="fixed inset-0 z-[60] md:hidden cinematic-plum"
           >
             <div className="flex items-center justify-between px-5 py-5">
-              <Logo color="cream" size="sm" withTagline={false} href={null} />
+              <Logo color="cream" size="sm" compact href={null} />
               <button
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
